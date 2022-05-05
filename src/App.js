@@ -22,7 +22,17 @@ function App() {
   <h1>Always take the weather with you</h1>
 <Form />
 </div>
+<p className="open-source">
+      <a
+        href="https://github.com/TokiLoshi/weather-app"
+        className="open-source"
+      >
+        Open source code
+      </a>
+      by Bianca Silva
+    </p>
 </div>
+
     </div>
   );
 }
