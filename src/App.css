@@ -2,18 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +35,163 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #cdcdd1;
+  /* background: url("./images/globe.jpeg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  backdrop-filter: sepia(10%);
+} */
+}
+h1,
+h2,
+h3,
+h5 {
+  color: #006ec5;
+}
+h1 {
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+h4 {
+  color: #42a5f5;
+  font-family: "Ubuntu", sans-serif;
+}
+
+label {
+  color: #3a3c3f;
+}
+p {
+  line-height: 1.5;
+}
+form {
+  /* position: relative; */
+  left: 5px;
+  display: block;
+}
+
+.celcius-temp {
+  color: #42a5f5;
+  font-weight: 800;
+  font-size: 40px;
+  border: none;
+}
+p.celcius-temp {
+  color: #42a5f5;
+}
+
+.btn-success {
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+
+/* .background-image {
+  background: url("./images/globe.jpeg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  backdrop-filter: sepia(10%);
+} */
+.container-wrapper {
+  border: 1px solid #929aa9;
+  background: rgb(243, 243, 246, 0.8);
+  opacity: 0.9;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  max-width: 800px;
+  padding-bottom: 20px;
+}
+/* .background-image {
+    background: url("./images/globe.jpeg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: sepia(10%);
+  } */
+
+.container-location {
+  left: 20px;
+  color: #5a6274;
+  font-size: 16px;
+  padding: 10px;
+}
+.card {
+  text-align: center;
+}
+.card-body {
+  background: rgb(243, 243, 246, 0.9);
+  border-radius: 10px;
+}
+.weather-icon {
+  font-size: 50px;
+  color: #5a6274;
+  text-align: center;
+  padding: 10px;
+  transition: all 150ms ease-in-out;
+}
+.forecast-icon {
+  color: #5a6274;
+  transition: all 150ms ease-in-out;
+}
+.forecast-description {
+  color: #5a6274;
+}
+
+.card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+#forecast-icon:hover {
+  opacity: 0.8;
+}
+.temp-max {
+  color: #5a6274;
+  opacity: 0.9;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  line-height: 1.5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #5a6274;
+}
+li::first-letter {
+  text-transform: capitalize;
+}
+.humidity,
+.wind {
+  font-size: 18px;
+  color: #212529;
+}
+#weather-element {
+  color: #5a6274;
+  transition: all 150ms ease-in-out;
+}
+
+.weather-now {
+  opacity: 0.9;
+  font-size: 60px;
+  transition: all 150ms ease-in-out;
+}
+.weather-now:hover,
+.weather-icon:hover {
+  opacity: 0.5;
+  font-size: 70px;
+}
+#weather-element:hover {
+  opacity: 0.5;
+  font-size: 70px;
 }

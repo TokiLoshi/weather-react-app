@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
 
-export default function App(props) {
+export default function Weather(props) {
   const [temperature, setTemperature] = useState(null);
   const [city, setCity] = useState(null);
   const [description, setDescription] = useState(null);
