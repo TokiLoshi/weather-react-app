@@ -39,7 +39,7 @@ export default function Weather() {
         <label className="form-label ml-3">Get your 5 Day Forecast:</label>
       </div>
       <div className="row">
-        <div className="col-6">
+        <div className="col-8">
           <input
             type="search"
             id="city-input"
@@ -51,7 +51,7 @@ export default function Weather() {
           type="submit"
           id="search"
           value="Search"
-          className="btn btn-primary col-3" onSubmit={handleSubmit} />
+          className="btn btn-primary col-3 " onSubmit={handleSubmit} />
       </div>
       <div className="row">
         <div clasName="col-4 m-2">
