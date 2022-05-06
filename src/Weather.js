@@ -38,7 +38,8 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
   return (
-    <div className="Weather">
+<div>
+  <div className="Weather">
       <form className="search-weather" onSubmit={handleSubmit}>
       <div className="row">
         <label className="form-label ml-3">Get your 5 Day Forecast:</label>
@@ -59,16 +60,59 @@ export default function Weather(props) {
         </div>
       </div>
       </form>
-      {/* <WeatherInfo data= {weatherData} /> */}
+      </div>
+     <div>
+
+  <div className="Please Work Container">
+  <div className="weather-forecast-day">
+      <div className="row">
+      <div className="col-6">
+            <h4 className="day">{weatherData.date}</h4>
+            <ul>
+  <li className="last-updated"><span><em>Last updated: 13:35</em></span></li>
+            <h2 className="user-city">
+              <span>
+                <strong>{weatherData.city}</strong>
+              </span>
+            </h2>
+            <br />
+            <a className="celcius-temp" href="/">
+              {weatherData.temperature}°
+            </a>
+            <span className="units">
+              <button
+                href="/"
+                className="btn btn-light btn-lg active"
+                aria-pressed="true"
+              >
+                C
+              </button>
+              <button
+                href="/"
+                className="btn btn-light btn-lg"
+                aria-pressed="false"
+              >
+                / F
+              </button>
+            </span>
+          </ul>
+
+      </div> 
+  <div className="col-6">
+  <div className= "weather-conditions">
         <ul>
-          <li>{weatherData.date}</li>
-          <li>{weatherData.city}</li>
+        <li><img src={weatherData.icon} alt="current weather icon" className="float-top" /></li>
           <li>Temperature: {weatherData.temperature} °C</li>
           <li>Description: {weatherData.descriptiondescription}</li>
           <li>Humidity: {weatherData.humidity}%</li>
           <li>Wind: {weatherData.wind} m/s</li>
-          <li><img src={weatherData.icon} alt="current weather icon" className="float-top" /></li>
         </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div> 
+    </div>
     </div>
   );
 } else {
