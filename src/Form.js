@@ -89,7 +89,7 @@ export default function Weather() {
     {wind !== null ? 
     <ul>
       <h2>{city}</h2>
-      <h4>{temperature !== null ? `${temperature} °` : ""}</h4><span className="units"><button href="/" className="btn btn-light btn-lg active m-2" aria-pressed="true">C</button><button href="/" className="btn btn-light btn-lg m-2" aria-pressed="false" >/F</button></span>
+      <span><h4>{temperature !== null ? `${temperature} °` : ""}</h4><span className="units"><button href="/" className="btn btn-light btn-lg active m-2" aria-pressed="true">C</button><button href="/" className="btn btn-light btn-lg m-2" aria-pressed="false" >/F</button></span></span>
       <li>{temperature !== null ? `Temperature: ${temperature} °C` : ""}</li>
       <li>{description !== null ? `Description: ${description}` : ""}</li>
       <li>{humidity !== null ? `Humidity: ${humidity}%` : ""}</li>
