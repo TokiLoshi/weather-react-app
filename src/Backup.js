@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
 
-export default function Weather() {
+export default function Form () {
   const [temperature, setTemperature] = useState(null);
   const [city, setCity] = useState(null);
   const [description, setDescription] = useState(null);
@@ -65,5 +65,40 @@ export default function Weather() {
     </form>
     </div>
     ); }
+
  
-   
+ {/* <div className="container-location">
+      <div className="row">
+        <div className="col-6">
+          <h4 className="day">Thursday</h4>
+          <div className="row">
+            <ul>
+              <li>
+                <span id="date"></span>
+              </li>
+            </ul>
+          </div>
+          <ul>
+            <li className="last-updated">
+              <span>
+                <em>5 May, 2022</em>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+    </div>
+    {wind !== null ? 
+    <ul>
+      <h2>{city}</h2>
+      <span><h4>{temperature !== null ? `${temperature} °` : ""}</h4><span className="units"><button href="/" className="btn btn-light btn-lg active m-2" aria-pressed="true">C</button><button href="/" className="btn btn-light btn-lg m-2" aria-pressed="false" >/F</button></span></span>
+      <li>{temperature !== null ? `Temperature: ${temperature} °C` : ""}</li>
+      <li>{description !== null ? `Description: ${description}` : ""}</li>
+      <li>{humidity !== null ? `Humidity: ${humidity}%` : ""}</li>
+      <li>{wind !== null ? `Wind: ${wind} m/s` : ""}</li>
+      <li>{icon !== null ? <img src={icon} alt="current weather icon" /> : ""}</li>
+      </ul> : " "}
+        </div>
+
+  )}; */

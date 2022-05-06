@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import image from "./images/globe.jpeg";
 import Form from './Form';
+import Weather from './Weather';
 
 function App() {
   return (   
@@ -20,7 +21,8 @@ function App() {
 <div className="container">
 <div className="container-wrapper">
   <h1>Always take the weather with you</h1>
-<Form />
+{/* <Form /> */}
+<Weather defaultCity="Vilanculos"/>
 </div>
 <p className="open-source">
       <a
