@@ -39,10 +39,25 @@ export default function Weather(props) {
   if (weatherData.ready) {
   return (
     <div className="Weather">
-      <h1>Weather App</h1>
       <form className="search-weather" onSubmit={handleSubmit}>
-        <input type="search" placeholder="Enter a city" onChange={changeCity} className="form-control" autoFocus="on"/>
-        <input type="submit" value="Search" />
+      <div className="row">
+        <label className="form-label ml-3">Get your 5 Day Forecast:</label>
+      </div>
+      <div className="row">
+        <div className="col-8">
+        <input type="search" placeholder="Search for a city" onChange={changeCity} className="form-control" autoFocus="on"/>
+        </div>
+        <input type="submit" value="Search" className="btn btn-primary col-3 "/>
+        </div>
+        <div className="row">
+        <div clasName="col-4 m-2">
+          <input
+            type="click"
+            value="Your location 🌎"
+            id="current-location-button"
+            className="btn btn-success w-30 mt-2" />
+        </div>
+      </div>
       </form>
       {/* <WeatherInfo data= {weatherData} /> */}
         <ul>
