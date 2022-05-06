@@ -48,15 +48,15 @@ export default function Weather(props) {
         <div className="col-8">
         <input type="search" placeholder="Search for a city" onChange={changeCity} className="form-control" autoFocus="on"/>
         </div>
-        <input type="submit" value="Search" className="btn btn-primary col-3 "/>
+        <input type="submit" value="Search" className="btn btn-primary col-3 ms-4 "/>
         </div>
         <div className="row">
-        <div clasName="col-4 m-2">
+        <div clasName="col-6 m-2">
           <input
             type="click"
-            value="Your location 🌎"
+            value="🌎 Or...search by your location 🌎"
             id="current-location-button"
-            className="btn btn-success w-30 mt-2" />
+            className="btn btn-outline-secondary w-100 mt-2 pe-2" />
         </div>
       </div>
       </form>
@@ -67,8 +67,9 @@ export default function Weather(props) {
   <div className="weather-forecast-day">
       <div className="row">
       <div className="col-6">
+      <ul>
             <h4 className="day">{weatherData.date}</h4>
-            <ul>
+        
   <li className="last-updated"><span><em>Last updated: 13:35</em></span></li>
             <h2 className="user-city">
               <span>
@@ -77,19 +78,19 @@ export default function Weather(props) {
             </h2>
             <br />
             <a className="celcius-temp" href="/">
-              {weatherData.temperature}°
+              {Math.round(weatherData.temperature)}°
             </a>
             <span className="units">
               <button
                 href="/"
-                className="btn btn-light btn-lg active"
+                className="btn-celius btn btn-secondary btn-lg active m-2"
                 aria-pressed="true"
               >
                 C
               </button>
               <button
                 href="/"
-                className="btn btn-light btn-lg"
+                className="btn btn-light btn-sm"
                 aria-pressed="false"
               >
                 / F
@@ -102,10 +103,9 @@ export default function Weather(props) {
   <div className= "weather-conditions">
         <ul>
         <li><img src={weatherData.icon} alt="current weather icon" className="float-top" /></li>
-          <li>Temperature: {weatherData.temperature} °C</li>
-          <li>Description: {weatherData.descriptiondescription}</li>
-          <li>Humidity: {weatherData.humidity}%</li>
-          <li>Wind: {weatherData.wind} m/s</li>
+          <li className="text-capitalize"><strong>Description: </strong> {weatherData.description}</li>
+          <li><strong>Humidity: </strong>{weatherData.humidity}%</li>
+          <li><strong>Wind Speed: </strong> {weatherData.wind} m/s</li>
         </ul>
         </div>
         </div>
