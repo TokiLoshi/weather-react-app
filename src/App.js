@@ -26,7 +26,7 @@ function App() {
 <p className="open-source">
       <a
         href="https://github.com/TokiLoshi/weather-app"
-        className="open-source" target="_blank" rel="noreferrer"
+        className="open-source" target="_blank" rel="noopener noreferrer"
       >
         Open source code
       </a>
