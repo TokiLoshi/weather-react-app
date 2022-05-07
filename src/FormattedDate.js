@@ -18,7 +18,7 @@ export default function FormattedDate(props) {
     <div  className="ms-2">
     <h4>{day}, {date} {month}</h4>
     <ul>
-      <li className="last-updated">
+      <li className="last-updated ms-3">
         <span>
         <em>Last updated: </em>
         </span>{hours}:{minutes}</li>
