@@ -1,5 +1,5 @@
 import React from "react";
-// import FormattedDate from "./FormattedDate";
+import FormattedDate from "./FormattedDate";
 
 export default function WeatherInfo(props) {
   console.log(props);
@@ -10,9 +10,8 @@ export default function WeatherInfo(props) {
         <div className="row">
         <div className="col-6">
         <ul>
-                {/* <FormattedDate date={props.data.date} /> */}
+                <FormattedDate date={props.data.date} />
 
-    <li className="last-updated"><span><em>Last updated:</em></span>{props.date}</li>
               <h2 className="user-city">
                 <span>
                   <strong>{props.data.city}</strong>
