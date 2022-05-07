@@ -161,19 +161,23 @@ a.celcius-temp {
   font-size: 18px;
   color: #212529;
 }
+.footer {
+  background-color: rgb(92, 89, 88, 0.3);
+  background-color: rgb(255, 251, 249, 0.3);
+  border: 1px solid rgb(255, 251, 249, 0.3);
+  border-radius: 5px;
+}
 .open-source {
   padding: 10px;
   margin: 0 auto;
+  /* padding: 5px; */
   display: block;
-  color: #ffffff;
+color: #ffff;
   text-decoration: none;
   text-align: center;
+  justify-content: space-evenly;
 }
 
-a .open-source {
-  text-decoration: none;
-  color: white;
-}
 
 #weather-element {
   color: #5a6274;

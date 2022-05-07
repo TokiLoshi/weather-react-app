@@ -23,6 +23,7 @@ function App() {
 
 <Weather defaultCity="Vilanculos" />
 </div>
+<div className="footer">
 <p className="open-source">
       <a
         href="https://github.com/TokiLoshi/weather-app"
@@ -32,6 +33,7 @@ function App() {
       </a>
       by Bianca Silva
     </p>
+    </div>
 </div>
 
     </div>

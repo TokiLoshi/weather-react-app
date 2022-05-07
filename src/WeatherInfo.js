@@ -7,8 +7,9 @@ export default function WeatherInfo(props) {
 
     <div className="Weather Info">
     <div className="weather-forecast-day">
+        <div className="container">
         <div className="row">
-        <div className="col-6">
+        <div className="col-6 d-flex">
         <ul>
                 <FormattedDate date={props.data.date} />
 
@@ -53,5 +54,6 @@ export default function WeatherInfo(props) {
       </div>
       </div>
       </div> 
+      </div>
   );
 }
