@@ -15,7 +15,7 @@ export default function weatherTemperature(props) {
 
   if (unit ==="celcius") {
   return (
-<ul>
+<ul className="ms-3">
 <a className="celcius-temp" href="/">
                 {Math.round(props.celcius)}°
               </a>
@@ -40,7 +40,7 @@ export default function weatherTemperature(props) {
   } else {
     let fahrenheit= (props.celcius * 9)/5 +32;
     return (
-      <ul>
+      <ul className="ms-3">
       <a className="celcius-temp" href="/">
                       {Math.round(fahrenheit)}°
                     </a>

@@ -15,7 +15,7 @@ export default function WeatherInfo(props) {
         <ul>
                 <FormattedDate date={props.data.date} />
 
-        <h2 className="user-city">
+        <h2 className="user-city ms-2">
                 <span>
                   <strong>{props.data.city}</strong>
                 </span>
@@ -35,7 +35,6 @@ export default function WeatherInfo(props) {
             <div className="float-left">
             <WeatherIcon code={props.data.icon} className="float-top"/>
             </div>
-          {/* <li><img src={props.data.icon} alt="current weather icon" className="float-top" /></li> */}
             <li className="text-capitalize"><strong>Description: </strong> {props.data.description}</li>
             <li><strong>Humidity: </strong>{props.data.humidity}%</li>
             <li><strong>Wind Speed: </strong> {props.data.wind} m/s</li>

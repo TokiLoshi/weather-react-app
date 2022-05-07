@@ -15,7 +15,7 @@ export default function FormattedDate(props) {
     hours = `0${hours}`;
   }
   return (
-    <div>
+    <div  className="ms-2">
     <h4>{day}, {date} {month}</h4>
     <ul>
       <li className="last-updated">
