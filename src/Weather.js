@@ -65,7 +65,7 @@ function handlePosition(position) {
         <div className="row">
         <div className="col-8 m-2">
           <input
-            type="text"
+            type="button"
             defaultValue="🌎 Or...search by your location 🌎"
             id="current-location-button"
             className="btn btn-outline-secondary w-100 mt-2 pe-2" onClick={getCoords}/>
