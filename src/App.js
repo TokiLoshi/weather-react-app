@@ -21,7 +21,7 @@ function App() {
 <div className="container-wrapper">
   <h1>Always take the weather with you</h1>
 
-<Weather />
+<Weather defaultCity="Vilanculos" />
 </div>
 <p className="open-source">
       <a

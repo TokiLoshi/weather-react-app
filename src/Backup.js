@@ -67,7 +67,7 @@ export default function Form () {
     ); }
 
  
- {/* <div className="container-location">
+ /* <div className="container-location">
       <div className="row">
         <div className="col-6">
           <h4 className="day">Thursday</h4>
