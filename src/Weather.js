@@ -6,7 +6,6 @@ import WeatherInfo from "./WeatherInfo";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
- 
 
   function handleResponse(response) {
     setWeatherData({
@@ -38,6 +37,18 @@ export default function Weather(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+function getCoords() {
+  navigator.geolocation.getCurrentPosition(handlePosition)
+}
+
+function handlePosition(position) {
+  const apiKey = "85b2f9ddbf909c56fc814cf91c0ccce6";
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let gpsUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}&units=metric`;
+    axios.get(gpsUrl).then(handleResponse);
+}
+
   if (weatherData.ready) {
   return (
 <div>
@@ -55,10 +66,10 @@ export default function Weather(props) {
         <div className="row">
         <div className="col-8 m-2">
           <input
-            type="click"
-            value="🌎 Or...search by your location 🌎"
+            type="text"
+            defaultValue="🌎 Or...search by your location 🌎"
             id="current-location-button"
-            className="btn btn-outline-secondary w-100 mt-2 pe-2" />
+            className="btn btn-outline-secondary w-100 mt-2 pe-2" onClick={getCoords}/>
         </div>
       </div>
       </form>
@@ -71,12 +82,6 @@ export default function Weather(props) {
   );
 } else {
   search();
-
-  // const units = "metric";
-  //   const apiKey = "85b2f9ddbf909c56fc814cf91c0ccce6";
-  //   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=${units}`;
-  //   axios.get(apiUrl).then(handleResponse);
-
   return (
     "Loading...");
   }
