@@ -1,5 +1,5 @@
 import React from "react";
-import clearsky from "./images/01n.svg";
+import clearsky from "./images/01d.svg";
 import clearnight from "./images/01n.svg";
 import fewcloudsday from "./images/02d.svg";
 import fewcloudsnight from "./images/02n.svg";
@@ -44,7 +44,7 @@ const codeMapping ={
   return (
  <div>
 
- <img src={codeMapping[props.code]} alt={props.description} width={150}/>
+ <img src={codeMapping[props.code]} alt={props.description} width={props.size}/>
 
     </div>
   );

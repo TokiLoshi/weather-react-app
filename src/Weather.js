@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -68,13 +69,14 @@ function handlePosition(position) {
             type="button"
             defaultValue="🌎 Or...search by your location 🌎"
             id="current-location-button"
-            className="btn btn-outline-secondary w-100 mt-2 pe-2" onClick={getCoords}/>
+            className="current-location btn btn-outline-secondary w-100 mt-2 pe-2" onClick={getCoords}/>
         </div>
       </div>
       </form>
       </div>
      <div>
 <WeatherInfo data={weatherData}/>
+<WeatherForecast />
     
     </div>
     </div>

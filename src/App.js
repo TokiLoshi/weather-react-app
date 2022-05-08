@@ -18,7 +18,7 @@ function App() {
       }}
     >
 <div className="container">
-<div className="container-wrapper">
+<div className="container-wrapper shadow">
   <h1>Always take the weather with you</h1>
 
 <Weather defaultCity="Vilanculos" />

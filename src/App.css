@@ -102,6 +102,10 @@ a.celcius-temp {
   color: #42a5f5;
   opacity: 0.8;
 }
+.btn-secondary:hover {
+  background-color: #006ec5;
+  color: #006ec5;
+}
 
 .container-wrapper {
   border: 1px solid #929aa9;
