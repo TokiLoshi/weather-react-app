@@ -17,6 +17,8 @@ function handleResponse(response) {
 }
 function load() {
   const apiKey = "85b2f9ddbf909c56fc814cf91c0ccce6";
+  // const apiKey = "85b2f9ddbf909c56fc814cf91c0ccce6";
+  const apiKey = "5f2546aa7530dc977682fdfc6556f973";
   const units = "metric";
   let longitude = props.coordinates.lon;
   let latitude = props.coordinates.lat;
@@ -29,6 +31,7 @@ if (loaded) {
 return (
   
   <div className="WeatherForecast">
+      <h4>Your 5 day forecast</h4>
     <div className="row">
       {forecastData.map(function (dailyForecast, index) {
           if (index < 5) {

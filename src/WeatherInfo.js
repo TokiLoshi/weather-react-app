@@ -4,7 +4,6 @@ import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
-  // console.log(props);
   return (
 
     <div className="Weather Info">
