@@ -16,7 +16,6 @@ function handleResponse(response) {
   setLoaded(true);
 }
 function load() {
-  const apiKey = "85b2f9ddbf909c56fc814cf91c0ccce6";
   // const apiKey = "85b2f9ddbf909c56fc814cf91c0ccce6";
   const apiKey = "5f2546aa7530dc977682fdfc6556f973";
   const units = "metric";
