@@ -27,7 +27,7 @@ function App() {
 <div className="footer">
 <p className="open-source">
       <a
-        href="https://github.com/TokiLoshi/weather-app"
+        href="https://github.com/TokiLoshi/weather-react-app"
         className="open-source" target="_blank" rel="noopener noreferrer"
       >
         Open source code
