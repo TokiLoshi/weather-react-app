@@ -12,6 +12,7 @@ function App() {
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        backgroundColor: 'white',
         padding: "10px",
         margin: "10px",
         borderRadius: "5px"
@@ -31,11 +32,10 @@ function App() {
       >
         Open source code
       </a>
-      by Bianca Silva
+      <a href="https://tiny-valkyrie-cad23c.netlify.app/" className="open-source" target="_blank" rel="noopener noreferrer">by Bianca Silva</a>
     </p>
     </div>
 </div>
-
     </div>
   );
 }

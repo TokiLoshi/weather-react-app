@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
+import "Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 
@@ -62,13 +63,13 @@ function handlePosition(position) {
         <div className="col-8">
         <input type="search" placeholder="Search for a city" onChange={changeCity} className="form-control" autoFocus="on"/>
         </div>
-        <input type="submit" value="Search" className="btn btn-primary col-3 ms-4 "/>
+        <input type="submit" value="Search" className="btn btn-primary col-3 p-2 "/>
         </div>
         <div className="row">
-        <div className="col-8 m-2">
+        <div className="col m-2">
           <input
             type="button"
-            defaultValue="🌎 Or...search by your location 🌎"
+            defaultValue="Or...search by your location 🌎"
             id="current-location-button"
             className="current-location btn btn-outline-secondary w-100 mt-2 pe-2" onClick={getCoords}/>
         </div>

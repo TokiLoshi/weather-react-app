@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -7,11 +10,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} 
+/* \ */
 
 /* .App-header {
   background-color: #282c34;
