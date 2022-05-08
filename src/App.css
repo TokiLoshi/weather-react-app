@@ -3,38 +3,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-/* \ */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 body {
   font-family: "Ubuntu", sans-serif;
   background-color: #cdcdd1;
@@ -55,10 +31,6 @@ h4 {
   color: #42a5f5;
   font-family: "Ubuntu", sans-serif;
 }
-
-label {
-  color: #3a3c3f;
-}
 p {
   line-height: 1.5;
 }
@@ -68,7 +40,7 @@ form {
 }
 ul, ol {
   margin-left: -1.5em;
-  padding: 5px;
+  padding-left: -1em;
   list-style: none;
 }
 li {
@@ -80,30 +52,6 @@ li {
 }
 li::first-letter {
   text-transform: capitalize;
-}
-
-.celcius-temp {
-  color: #42a5f5;
-  font-weight: 800;
-  font-size: 40px;
-  border: none;
-}
-a.celcius-temp {
-  color: #42a5f5;
-  text-decoration: none;
-}
-
-.btn-light {
-  cursor: pointer;
-  padding-left: 15px;
-}
-.btn-secondary {
-  color: #42a5f5;
-  opacity: 0.8;
-}
-.btn-secondary:hover {
-  background-color: #006ec5;
-  color: #006ec5;
 }
 
 .container-wrapper {
@@ -131,39 +79,11 @@ a.celcius-temp {
   background: rgb(243, 243, 246, 0.9);
   border-radius: 10px;
 }
-.weather-icon {
-  font-size: 50px;
-  color: #5a6274;
-  text-align: center;
-  padding: 10px;
-  transition: all 150ms ease-in-out;
-}
-.forecast-icon {
-  color: #5a6274;
-  transition: all 150ms ease-in-out;
-}
-.forecast-description {
-  color: #5a6274;
-}
-
 .card-body {
   text-align: center;
   padding: 20px;
 }
 
-#forecast-icon:hover {
-  opacity: 0.8;
-}
-.temp-max {
-  color: #5a6274;
-  opacity: 0.9;
-}
-
-.humidity,
-.wind {
-  font-size: 18px;
-  color: #212529;
-}
 .footer {
   background-color: rgb(92, 89, 88, 0.3);
   background-color: rgb(255, 251, 249, 0.3);
@@ -173,31 +93,10 @@ a.celcius-temp {
 .open-source {
   padding: 10px;
   margin: 0 auto;
-  /* padding: 5px; */
+  padding: 5px;
   display: block;
 color: #ffff;
   text-decoration: none;
   text-align: center;
   justify-content: space-evenly;
-}
-
-
-#weather-element {
-  color: #5a6274;
-  transition: all 150ms ease-in-out;
-}
-
-.weather-now {
-  opacity: 0.9;
-  font-size: 60px;
-  transition: all 150ms ease-in-out;
-}
-.weather-now:hover,
-.weather-icon:hover {
-  opacity: 0.5;
-  font-size: 70px;
-}
-#weather-element:hover {
-  opacity: 0.5;
-  font-size: 70px;
 }

@@ -10,3 +10,7 @@
   opacity: 0.6;
   margin-left: 5px;
 }
+.WeatherForecast-temperature-min {
+  color: #5a6274;
+  opacity: 0.9;
+}

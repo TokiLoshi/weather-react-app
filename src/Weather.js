@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
-import "Weather.css";
+import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 
@@ -57,7 +57,7 @@ function handlePosition(position) {
   <div className="Weather">
       <form className="search-weather" onSubmit={handleSubmit}>
       <div className="row">
-        <label className="form-label ml-3">Get your 5 Day Forecast:</label>
+        <label className="weather-label form-label ml-3">Get your 5 Day Forecast:</label>
       </div>
       <div className="row">
         <div className="col-8">

@@ -12,10 +12,10 @@ export default function WeatherInfo(props) {
         <div className="container">
         <div className="row">
         <div className="col-6 d-flex">
-        <ul>
+        <ul className="Weather-">
                 <FormattedDate date={props.data.date} />
 
-        <h2 className="user-city ms-2">
+        <h2 className="user-city mt-3">
                 <span>
                   <strong>{props.data.city}</strong>
                 </span>

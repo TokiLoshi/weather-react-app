@@ -1,0 +1,24 @@
+
+.celcius-temp {
+  color: #42a5f5;
+  font-weight: 800;
+  font-size: 40px;
+  border: none;
+}
+a.celcius-temp {
+  color: #42a5f5;
+  text-decoration: none;
+}
+
+.btn-light {
+  cursor: pointer;
+  padding-left: 15px;
+}
+.btn-secondary {
+  color: #42a5f5;
+  opacity: 0.8;
+}
+.btn-secondary:hover {
+  background-color: #006ec5;
+  color: #006ec5;
+}

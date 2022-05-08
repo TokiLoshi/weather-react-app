@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function FormattedDate(props) {
-  let days = ["Suday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let day = days[props.date.getDay()];
   let hours = props.date.getHours();
   let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -15,14 +15,12 @@ export default function FormattedDate(props) {
     hours = `0${hours}`;
   }
   return (
-    <div  className="ms-2">
+    <div>
     <h4>{day}, {date} {month}</h4>
-    <ul>
-      <li className="last-updated ms-3">
+      <li className="last-updated">
         <span>
         <em>Last updated: </em>
         </span>{hours}:{minutes}</li>
-        </ul>
         </div>
    
   );
